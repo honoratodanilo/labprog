@@ -1,3 +1,6 @@
+/*Aluno 1: Danilo Honorato*/
+/*Aluno 2: João Victor*/
+
 import java.util.Scanner;
 
 public class ExplorandoOMundoDasSeries {

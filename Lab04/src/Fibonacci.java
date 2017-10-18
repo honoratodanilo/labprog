@@ -1,4 +1,5 @@
-
+/*Aluno 1: Danilo Honorato*/
+/*Aluno 2: João Victor*/
 public class Fibonacci {
 		 
 	   public static int fibo(int n) {
