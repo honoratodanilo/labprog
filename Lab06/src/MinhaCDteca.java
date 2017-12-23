@@ -1,12 +1,11 @@
 
 /*
- * Aluno 01: Jo„o Victor
+ * Aluno 01: Jo√£o Victor
  * Aluno 02: Danilo Honorato
 */
 
 /**
- * Classe que contÈm uma coleÁ„o de CD's com mÈtodos para manipul·-los.
- * @author Adenou
+ * Classe que cont√©m uma cole√ß√£o de CD's com m√©todos para manipul√°-los.
  */
 
 import java.util.ArrayList;
@@ -19,7 +18,7 @@ public class MinhaCDteca {
 	private int variedade;
 	
 	/**
-	 * Contrutor que instancia um coleÁ„o do CD's.
+	 * Contrutor que instancia um cole√ß√£o do CD's.
 	 */
 	public MinhaCDteca() {
 		colecaoDeCDs = new ArrayList<CD>();
@@ -27,7 +26,7 @@ public class MinhaCDteca {
 	}
 	
 	/**.
-	 * @param novoCD Um CD que ser· adicionado a coleÁ„o.
+	 * @param novoCD Um CD que ser√° adicionado a cole√ß√£o.
 	 */
 	public void adicionaCD(CD novoCD) {
 		int cont=0;
@@ -41,8 +40,8 @@ public class MinhaCDteca {
 	}
 	
 	/**
-	 * Adiciona uma lista de CD's na coleÁ„o de CD's.
-	 * @param listaCDs Uma List<CD> que ser· adicionada a coleÁ„o.
+	 * Adiciona uma lista de CD's na cole√ß√£o de CD's.
+	 * @param listaCDs Uma List<CD> que ser√° adicionada a cole√ß√£o.
 	 */
 	public void adicionaCDs(List<CD> listaCDs) {
 		for(int i = 0; i < listaCDs.size(); i++) {
@@ -51,10 +50,10 @@ public class MinhaCDteca {
 	}
 	
 	/**
-	 * Remove um CD da lista de CD's a partir do tÌtulo do CD.
-	 * @param titulo O tÌtulo do CD que se quer remover.
-	 * @return O CD removido, ou null se n„o tiver sido encontrado.
-	 * @throws Exception Ser· lanÁada caso o CD que o usu·rio esteja tentando remover n„o esteja na coleÁ„o.
+	 * Remove um CD da lista de CD's a partir do t√≠tulo do CD.
+	 * @param titulo O t√≠tulo do CD que se quer remover.
+	 * @return O CD removido, ou null se n√£o tiver sido encontrado.
+	 * @throws Exception Ser√° lan√ßada caso o CD que o usu√°rio esteja tentando remover n√£o esteja na cole√ß√£o.
 	 */
 	public CD removeCD(String titulo) throws Exception{
 		for(int i = 0; i < colecaoDeCDs.size(); i++) {
@@ -62,12 +61,12 @@ public class MinhaCDteca {
 				return colecaoDeCDs.remove(i);
 			}
 		}
-		throw new Exception("Este CD n„o est· na discografia.");
+		throw new Exception("Este CD n√£o est√° na discografia.");
 	}
 	
 	/**
 	 * @param titulos Uma List<CD> com os CD's que se deseja remover.
-	 * @return true se pelo menos um CD for removido, false se n„o remover nenhum CD da coleÁ„o.
+	 * @return true se pelo menos um CD for removido, false se n√£o remover nenhum CD da cole√ß√£o.
 	 */
 	public boolean removeCDs(List<CD> listaCDs) {
 		int cont = 0;
@@ -84,9 +83,9 @@ public class MinhaCDteca {
 	}
 	
 	/**
-	 * Pesquisa um CD na discografia de CD's com base no tÌtulo.
-	 * @param titulo O tÌtulo do CD procurado.
-	 * @return O CD caso ele esteja na coleÁ„o ou null se n„o o achar.
+	 * Pesquisa um CD na discografia de CD's com base no t√≠tulo.
+	 * @param titulo O t√≠tulo do CD procurado.
+	 * @return O CD caso ele esteja na cole√ß√£o ou null se n√£o o achar.
 	 */
 	public CD pesquisaCD(String titulo) {
 		for(int i = 0; i < colecaoDeCDs.size(); i++)
@@ -96,14 +95,14 @@ public class MinhaCDteca {
 	}
 	
 	/**
-	 * @return O n˙mero de CD's que existem na discografia.
+	 * @return O n√∫mero de CD's que existem na discografia.
 	 */
 	public int numeroDeCDs() {
 		return this.colecaoDeCDs.size();
 	}
 	
 	/**
-	 * Compara as coleÁıes de CD's para ver uma È igual a outra.
+	 * Compara as cole√ß√µes de CD's para ver uma √© igual a outra.
 	 */
 	@Override
 	public boolean equals(Object outraBiblioteca) {
@@ -122,7 +121,7 @@ public class MinhaCDteca {
 	}
 	
 	/**
-	 * @retorn uma representaÁ„o da String da coleÁ„o de CD's.
+	 * @retorn uma representa√ß√£o da String da cole√ß√£o de CD's.
 	 */
 	@Override
 	public String toString() {
@@ -131,7 +130,7 @@ public class MinhaCDteca {
 		for(int i = 0; i < colecaoDeCDs.size(); i++) {
 			string.append(String.format("\n\nCD %02d", i+1));
 			string.append("\nArtista: "+colecaoDeCDs.get(i).getArtista());
-			string.append("\nTÌtulo: "+colecaoDeCDs.get(i).getTitulo());
+			string.append("\nT√≠tulo: "+colecaoDeCDs.get(i).getTitulo());
 		}
 		return string.toString();
 	}
